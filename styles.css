@@ -1,0 +1,116 @@
+/* Global styles for the entire page */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    color: #333;
+}
+
+/* Styling for all sections */
+section {
+    padding: 20px;
+    margin-bottom: 20px;
+    border-bottom: 1px solid #ccc;
+}
+
+/* Style for all headings */
+h2 {
+    font-size: 40px;
+    color: black;
+}
+
+/* Style for paragraphs */
+p {
+    font-size: 18px;
+    line-height: 1.5;
+}
+
+/* Descendant selectors */
+
+/* Styling paragraphs within the "Introduction" section */
+section#intro p {
+    color: darkblue;
+    font-style: italic;
+}
+
+/* Styling links inside figures in the project section */
+.project-logo figure a {
+    text-decoration: underline;
+    color: darkgreen;
+}
+
+/* Styling captions inside figures in the project section */
+.project-logo figure figcaption {
+    font-size: 16px;
+    color: gray;
+}
+
+/* Style for all links */
+a {
+    color: blueviolet;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+    color: darkblue;
+}
+
+/* Styling for navigation bar */
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline-block; /* Aligns navigation items horizontally */
+    margin-right: 15px;
+}
+
+/* Specific styling for the container with the profile picture */
+.intro-container {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start; /* Aligns content to the left */
+    margin-top: 20px;
+    padding: 20px;
+}
+
+.intro-container figure {
+    margin-right: 20px; /* Space between the photo and text */
+}
+
+/* Styling for all figures and images */
+figure {
+    text-align: center;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Dimensions for the profile picture */
+.headshot {
+    width: 1000px; /* Profile picture width */
+    height: 320px; /* Profile picture height */
+}
+
+/* Styles for project section */
+.project-logo {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.project-logo figure {
+    margin-right: 20px;
+}
+
+/* Fixed dimensions for project images */
+.project-logo img {
+    width: 150px;
+    height: 80px;
+    border: 2px solid black;
+}

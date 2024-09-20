@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html class="no-js">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Personal Website</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style>
+            /* Global styles for the entire page */
+            body {
+                font-family: Arial, sans-serif;
+                margin: 0;
+                padding: 0;
+                line-height: 1.6;
+                color: #333;
+            }
+
+            /* Styling for all sections */
+            section {
+                padding: 20px;
+                margin-bottom: 20px;
+                border-bottom: 1px solid #ccc;
+            }
+
+            /* Style for all headings */
+            h2 {
+                font-size: 40px;
+                color: black;
+            }
+
+            /* Style for paragraphs */
+            p {
+                font-size: 18px;
+                line-height: 1.5;
+            }
+
+            /* Style for all links */
+            a {
+                color: blueviolet;
+                text-decoration: none;
+            }
+            a:hover {
+                text-decoration: underline;
+                color: darkblue;
+            }
+
+            /* Styling for navigation bar */
+            nav ul {
+                list-style-type: none;
+                padding: 0;
+            }
+            nav ul li {
+                display: inline;
+                margin-right: 15px;
+            }
+
+            /* Specific styling for the container with the profile picture */
+            .intro-container {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                margin-top: 20px;
+                padding: 20px;
+            }
+
+            /* Styling for all figures and images */
+            figure {
+                margin-right: 20px;
+                text-align: center;
+            }
+
+            img {
+                max-width: 100%;
+                height: auto;
+            }
+
+        </style>
+    </head>
+    <body>
+        <!-- Navigation -->
+        <nav>
+            <ul>
+                <li><a href="#about-me">About Me</a></li>
+                <li><a href="#intro">Introduction</a></li>
+                <li><a href="#edu">Education</a></li>
+                <li><a href="#Pro">Projects</a></li>
+            </ul>
+        </nav>
+
+        <!-- About Me Section -->
+        <div class="intro-container" id="about-me">
+            <figure>
+                <img class="headshot" src="photo_profile.jpg" alt="Profile Picture" width="250" height="320">
+                <figcaption style="font-size: 14px;">PhD Student, Graduate School of Geography, Clark University</figcaption>
+            </figure>
+            <div class="about-me">
+                <h2 style="font-size:40px; color:black;">About Me</h2>
+                <p style="font-size:18px; line-height:1.5;">I hold a bachelor's degree in Environmental Engineering from the State University of Pará and a postgraduate degree in Statistics from the Federal University of Pará. I was a researcher at Imazon, leading the generation and dissemination of deforestation data and changes in land use and land cover in the Amazon biome. I also empowered other Amazonian countries to generate their land cover change data. I am currently a Ph.D. student in the Graduate School of Geography at Clark University. My research focuses on Geographic Information Systems (GIS), Remote Sensing, Land Use and Land Cover Maps, Spatial Analysis, and Uncertainty in Spatial Data.</p>
+            </div>
+        </div>
+
+        <!-- Introduction Section -->
+        <section id="intro">
+            <h2>Introduction</h2>
+            <p>Welcome to my personal website! This is a space where I share my academic journey, research, and projects related to my expertise in Geographic Information Systems (GIS), and Remote Sensing.</p>
+        </section>
+
+        <!-- Education Section -->
+        <section id="edu">
+            <h2>Education</h2>
+            <ul>
+                <li>Bachelor's degree in Environmental Engineering from the State University of Pará</li>
+                <li>Postgraduate degree in Statistics from the Federal University of Pará</li>
+                <li>Currently pursuing a Ph.D. in Geography at Clark University</li>
+            </ul>
+        </section>
+
+<!-- Projects Section -->
+
+<style>
+    .project-logo {
+        display: flex;
+        align-items: center;
+        margin-bottom: 20px;
+    }
+
+    .project-logo figure {
+        margin-right: 20px;
+    }
+
+    .project-logo img {
+        width: 150px;
+        height: 80px;
+        border: 2px solid black;
+    }
+</style>
+
+<section id="Pro">
+    <h2>Projects</h2>
+    <p>I have worked on several research projects focusing on Geographic Information Systems (GIS), Remote Sensing, and Land Use and Land Cover Mapping.</p>
+    
+    <!-- MapBiomas Logo with Link -->
+    <div class="project-logo">
+        <figure>
+            <a href="https://brasil.mapbiomas.org/en/" target="_blank">
+                <img src="mapbiomas_logo.png" alt="MapBiomas Logo">
+            </a>
+            <figcaption>MapBiomas Project</figcaption>
+        </figure>
+    </div>
+
+    <!-- RAISG Logo with Link -->
+    <div class="project-logo">
+        <figure>
+            <a href="https://www.amazoniasocioambiental.org/en/" target="_blank">
+                <img src="raisg_logo.png" alt="RAISG Logo">
+            </a>
+            <figcaption>RAISG Project</figcaption>
+        </figure>
+    </div>
+
+    <!-- NASA LULC Logo with Link -->
+    <div class="project-logo">
+        <figure style="margin-right: 20px;">
+            <a href="https://lcluc.umd.edu/node/39545" target="_blank">
+                <img src="nasa_lulc_logo.png" alt="NASA LULC Logo">
+            </a>
+            <figcaption>NASA LCLUC Project</figcaption>
+        </figure>
+    </div>
+</section>
+
+        <!-- Footer Section -->
+        <footer>
+            <p>Antonio Fonseca</p>
+            <p><a href="mailto:antfonseca@clarku.edu">antfonseca@clarku.edu</a></p>
+        </footer>
+    </body>
+</html>

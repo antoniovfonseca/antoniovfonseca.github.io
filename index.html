@@ -5,76 +5,7 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <title>Personal Website</title>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <style>
-            /* Global styles for the entire page */
-            body {
-                font-family: Arial, sans-serif;
-                margin: 0;
-                padding: 0;
-                line-height: 1.6;
-                color: #333;
-            }
-
-            /* Styling for all sections */
-            section {
-                padding: 20px;
-                margin-bottom: 20px;
-                border-bottom: 1px solid #ccc;
-            }
-
-            /* Style for all headings */
-            h2 {
-                font-size: 40px;
-                color: black;
-            }
-
-            /* Style for paragraphs */
-            p {
-                font-size: 18px;
-                line-height: 1.5;
-            }
-
-            /* Style for all links */
-            a {
-                color: blueviolet;
-                text-decoration: none;
-            }
-            a:hover {
-                text-decoration: underline;
-                color: darkblue;
-            }
-
-            /* Styling for navigation bar */
-            nav ul {
-                list-style-type: none;
-                padding: 0;
-            }
-            nav ul li {
-                display: inline;
-                margin-right: 15px;
-            }
-
-            /* Specific styling for the container with the profile picture */
-            .intro-container {
-                display: flex;
-                align-items: center;
-                justify-content: center;
-                margin-top: 20px;
-                padding: 20px;
-            }
-
-            /* Styling for all figures and images */
-            figure {
-                margin-right: 20px;
-                text-align: center;
-            }
-
-            img {
-                max-width: 100%;
-                height: auto;
-            }
-
-        </style>
+        <link rel="stylesheet" href="styles.css">
     </head>
     <body>
         <!-- Navigation -->
@@ -90,7 +21,8 @@
         <!-- About Me Section -->
         <div class="intro-container" id="about-me">
             <figure>
-                <img class="headshot" src="photo_profile.jpg" alt="Profile Picture" width="250" height="320">
+                <!-- Removed inline width and height -->
+                <img class="headshot" src="photo_profile.jpg" alt="Profile Picture">
                 <figcaption style="font-size: 14px;">PhD Student, Graduate School of Geography, Clark University</figcaption>
             </figure>
             <div class="about-me">
@@ -115,41 +47,41 @@
             </ul>
         </section>
 
-<!-- Projects Section -->
-<section id="Pro">
-    <h2>Projects</h2>
-    <p>I have worked on several research projects focusing on Geographic Information Systems (GIS), Remote Sensing, and Land Use and Land Cover Mapping.</p>
-    
-    <!-- MapBiomas Logo with Link -->
-    <div style="display: flex; align-items: center; margin-bottom: 20px;">
-        <figure style="margin-right: 20px;">
-            <a href="https://brasil.mapbiomas.org/en/" target="_blank">
-                <img src="mapbiomas_logo.png" alt="MapBiomas Logo" width="150" height="60">
-            </a>
-            <figcaption>MapBiomas Project</figcaption>
-        </figure>
-    </div>
+        <!-- Projects Section -->
+        <section id="Pro">
+            <h2>Projects</h2>
+            <p>I have worked on several research projects focusing on Geographic Information Systems (GIS), Remote Sensing, and Land Use and Land Cover Mapping.</p>
+            
+            <!-- MapBiomas Logo with Link -->
+            <div class="project-logo">
+                <figure>
+                    <a href="https://brasil.mapbiomas.org/en/" target="_blank">
+                        <img src="mapbiomas_logo.png" alt="MapBiomas Logo">
+                    </a>
+                    <figcaption>MapBiomas Project</figcaption>
+                </figure>
+            </div>
 
-    <!-- RAISG Logo with Link -->
-    <div style="display: flex; align-items: center; margin-bottom: 20px;">
-        <figure style="margin-right: 20px;">
-            <a href="https://www.amazoniasocioambiental.org/en/" target="_blank">
-                <img src="raisg_logo.png" alt="RAISG Logo" width="150" height="60">
-            </a>
-            <figcaption>RAISG Project</figcaption>
-        </figure>
-    </div>
+            <!-- RAISG Logo with Link -->
+            <div class="project-logo">
+                <figure>
+                    <a href="https://www.amazoniasocioambiental.org/en/" target="_blank">
+                        <img src="raisg_logo.png" alt="RAISG Logo">
+                    </a>
+                    <figcaption>RAISG Project</figcaption>
+                </figure>
+            </div>
 
-    <!-- NASA LULC Logo with Link -->
-    <div style="display: flex; align-items: center;">
-        <figure style="margin-right: 20px;">
-            <a href="https://lcluc.umd.edu/node/39545" target="_blank">
-                <img src="nasa_lulc_logo.png" alt="NASA LULC Logo" width="150" height="60">
-            </a>
-            <figcaption>NASA LCLUC Project</figcaption>
-        </figure>
-    </div>
-</section>
+            <!-- NASA LULC Logo with Link -->
+            <div class="project-logo">
+                <figure style="margin-right: 20px;">
+                    <a href="https://lcluc.umd.edu/node/39545" target="_blank">
+                        <img src="nasa_lulc_logo.png" alt="NASA LULC Logo">
+                    </a>
+                    <figcaption>NASA LCLUC Project</figcaption>
+                </figure>
+            </div>
+        </section>
 
         <!-- Footer Section -->
         <footer>
