@@ -114,3 +114,8 @@ img {
     height: 80px;
     border: 2px solid black;
 }
+
+/* Change link color*/
+.highlight_e {
+    background-color: yellow;
+}

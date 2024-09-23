@@ -87,6 +87,61 @@
         <footer>
             <p>Antonio Fonseca</p>
             <p><a href="mailto:antfonseca@clarku.edu">antfonseca@clarku.edu</a></p>
+            <p><small>&copy;Copyright &copy;
+                <script>document.write(new Date().getMonth() + 1 + '/' + new Date().getFullYear());</script>
+                Antonio Fonseca <br> All rights reserved</small></p>
+                <!-- br allows break in another line -->
+                <!-- <p><small>&copy;Copyright &copy;
+                    <script>document.write(new date().toLocaleString('eu-US', {month: 'short'}) + '/' + new Date().getFullYear());</script>
+                    Antonio Fonseca <br> All rights reserved</small></p> -->
+        
+                    <button onclick = "document.getElementById('lucky').textContent='You are the BEST One'";>Get your lucky words</button>
+
+                    <p id = "lucky"></p>
+
+                    <div>
+                        <button id ="backtoTop">Back To Top</button>
+                    </div>
+        <script>
+            const backButton = document.getElementById('backtoTop');
+            backButton.onclick = function(){
+                window.scrollTo({
+                    top: 0,
+                    behavior:'smooth'
+            })
+            };
+        </script>
+
+<button onclick= "this.textContent = Date()" style="height: 100px;font-size: large;">The current date and time</button>
+
+<button class='change_bk'>Click here to highlight my past experience</button>
+<div class="change_color">
+    <h1>
+        This is intro
+    </h1>
+    <p>
+        Hi, welcome to my <a href="">personal website</a>,
+        this is my <a href = "">projects web</a>
+    </p>
+</div>
+    <script>
+        const changebutton = document.querySelector(".change_bk");
+        const past_experience =  document.querySelectorAll("#change_color p a");
+
+        let back_g = true;
+
+        changebutton.onclick = function(){
+            past_experience.forEach(link => {
+                if (back_g){
+                    link.classList.add("highlight_e");
+                } else{
+                    link.classList.remove("highlight_e");
+                }
+            })
+            back_g = !back_g;
+            }
+    </script>
+
         </footer>
     </body>
 </html>
