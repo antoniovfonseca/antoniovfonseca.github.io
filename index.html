@@ -65,7 +65,7 @@
             <!-- RAISG Logo with Link -->
             <div class="project-logo">
                 <figure>
-                    <a href="https://www.amazoniasocioambiental.org/en/" target="_blank">
+                    <a href="https://www.raisg.org/en/" target="_blank">
                         <img src="raisg_logo.png" alt="RAISG Logo">
                     </a>
                     <figcaption>RAISG Project</figcaption>
@@ -83,6 +83,48 @@
             </div>
         </section>
 
+        <section id="my-apps">
+            <h2>My Apps</h2>
+            <p>Explore my deforestation map comparison app.</p>
+            <button id="gee-app-button">View Deforestation Map Comparison</button>
+        
+            <!-- Add Open Pop-up Button -->
+            <button id="open-popup">Preview</button>
+        
+            <!-- Pop-up Window -->
+            <div id="popup-window">
+                <!-- "X" Button to Close the Pop-up -->
+                <span id="close-btn">&times;</span>
+        
+                <p>Overview of the GEE App:</p>
+                <img src="overview_app_gee.png" alt="GEE App Overview">
+            </div>
+        </section>
+        
+        <script>
+            // For GEE App Button
+            const geeButton = document.getElementById('gee-app-button');
+            geeButton.onclick = function() {
+                window.open('https://avfonseca.users.earthengine.app/view/agreement-prodes-mapbiomas-gfc', '_blank');
+            };
+        
+            // For Opening the Pop-up
+            const open_button = document.getElementById('open-popup');
+            const close_button = document.getElementById('close-btn');
+            const popup = document.getElementById('popup-window');
+        
+            open_button.onclick = function() {
+                popup.style.display = 'block';
+            };
+        
+            close_button.onclick = function() {
+                popup.style.display = 'none';
+            };
+        </script>
+        
+        
+        
+
         <!-- Footer Section -->
         <footer>
             <p>Antonio Fonseca</p>
@@ -95,7 +137,7 @@
                     <script>document.write(new date().toLocaleString('eu-US', {month: 'short'}) + '/' + new Date().getFullYear());</script>
                     Antonio Fonseca <br> All rights reserved</small></p> -->
         
-                    <button onclick = "document.getElementById('lucky').textContent='You are the BEST One'";>Get your lucky words</button>
+                    <!-- <button onclick = "document.getElementById('lucky').textContent='You are the BEST One'";>Get your lucky words</button>
 
                     <p id = "lucky"></p>
 
@@ -126,7 +168,7 @@
 </div>
     <script>
         const changebutton = document.querySelector(".change_bk");
-        const past_experience =  document.querySelectorAll("#change_color p a");
+        const past_experience =  document.querySelectorAll(".change_color p a");
 
         let back_g = true;
 
@@ -141,7 +183,10 @@
             back_g = !back_g;
             }
     </script>
+        <p id="current-time"></p> -->
 
         </footer>
+
+        
     </body>
 </html>
