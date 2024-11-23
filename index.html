@@ -8,122 +8,149 @@
         <link rel="stylesheet" href="styles.css">
     </head>
     <body>
-        <!-- Navigation -->
-        <nav>
-            <ul>
-                <li><a href="#about-me">About Me</a></li>
-                <li><a href="#intro">Introduction</a></li>
-                <li><a href="#edu">Education</a></li>
-                <li><a href="#Pro">Projects</a></li>
-            </ul>
-        </nav>
+        <!-- Header Navigation -->
+        <header>
+            <nav>
+                <ul>
+                    <li><a href="#about-me" aria-label="About Me">About Me</a></li>
+                    <li><a href="#intro" aria-label="Introduction">Introduction</a></li>
+                    <li><a href="#edu" aria-label="Education">Education</a></li>
+                    <li><a href="#award" aria-label="Awards">Awards</a></li>
+                    <li><a href="#Pro" aria-label="Projects">Projects</a></li>
+                    <li><a href="#my-apps" aria-label="My Apps">My Apps</a></li>
+                </ul>
+            </nav>
+        </header>
 
-        <!-- About Me Section -->
-        <div class="intro-container" id="about-me">
-            <figure>
-                <!-- Removed inline width and height -->
-                <img class="headshot" src="photo_profile.jpg" alt="Profile Picture">
-                <figcaption style="font-size: 14px;">PhD Student, Graduate School of Geography, Clark University</figcaption>
-            </figure>
-            <div class="about-me">
-                <h2>About Me</h2>
-                <p>I hold a bachelor's degree in Environmental Engineering from the State University of Pará and a postgraduate degree in Statistics from the Federal University of Pará. I was a researcher at Imazon, leading the generation and dissemination of deforestation data and changes in land use and land cover in the Amazon biome. I also empowered other Amazonian countries to generate their land cover change data. I am currently a Ph.D. student in the Graduate School of Geography at Clark University. My research focuses on Geographic Information Systems (GIS), Remote Sensing, Land Use and Land Cover Maps, Spatial Analysis, and Uncertainty in Spatial Data.</p>
-            </div>
-        </div>
-
-        <!-- Introduction Section -->
-        <section id="intro">
-            <h2>Introduction</h2>
-            <p>Welcome to my personal website! This is a space where I share my academic journey, research, and projects related to my expertise in Geographic Information Systems (GIS), and Remote Sensing.</p>
-        </section>
-
-        <!-- Education Section -->
-        <section id="edu">
-            <h2>Education</h2>
-            <ul>
-                <li>Bachelor's degree in Environmental Engineering from the State University of Pará</li>
-                <li>Postgraduate degree in Statistics from the Federal University of Pará</li>
-                <li>Currently pursuing a Ph.D. in Geography at Clark University</li>
-            </ul>
-        </section>
-
-        <!-- Projects Section -->
-        <section id="Pro">
-            <h2>Projects</h2>
-            <p>I have worked on several research projects focusing on Geographic Information Systems (GIS), Remote Sensing, and Land Use and Land Cover Mapping.</p>
-            
-            <!-- MapBiomas Logo with Link -->
-            <div class="project-logo">
+        <main>
+            <!-- About Me Section -->
+            <div class="intro-container" id="about-me">
                 <figure>
-                    <a href="https://brasil.mapbiomas.org/en/" target="_blank">
-                        <img src="mapbiomas_logo.png" alt="MapBiomas Logo">
-                    </a>
-                    <figcaption>MapBiomas Project</figcaption>
+                    <img class="headshot" src="photo_profile.jpg" alt="Profile Picture">
+                    <figcaption style="font-size: 14px;">PhD Student, Graduate School of Geography, Clark University</figcaption>
                 </figure>
+                <div class="about-me">
+                    <h2>About Me</h2>
+                    <p>I hold a bachelor's degree in Environmental Engineering from the State University of Pará and a postgraduate degree in Statistics from the Federal University of Pará. I was a researcher at Imazon, leading the generation and dissemination of deforestation data and changes in land use and land cover in the Amazon biome. I also empowered other Amazonian countries to generate their land cover change data. I am currently a Ph.D. student in the Graduate School of Geography at Clark University. My research focuses on Geographic Information Systems (GIS), Remote Sensing, Land Use and Land Cover Maps, Spatial Analysis, and Uncertainty in Spatial Data.</p>
+                </div>
             </div>
 
-            <!-- RAISG Logo with Link -->
-            <div class="project-logo">
-                <figure>
-                    <a href="https://www.raisg.org/en/" target="_blank">
-                        <img src="raisg_logo.png" alt="RAISG Logo">
-                    </a>
-                    <figcaption>RAISG Project</figcaption>
-                </figure>
-            </div>
+            <!-- Introduction Section -->
+            <section id="intro">
+                <h2>Introduction</h2>
+                <p>Welcome to my personal website! This is a space where I share my academic journey, research, and projects related to my expertise in Geographic Information Systems (GIS), and Remote Sensing.</p>
+            </section>
 
-            <!-- NASA LULC Logo with Link -->
-            <div class="project-logo">
-                <figure style="margin-right: 20px;">
-                    <a href="https://lcluc.umd.edu/node/39545" target="_blank">
-                        <img src="nasa_lulc_logo.png" alt="NASA LULC Logo">
-                    </a>
-                    <figcaption>NASA LCLUC Project</figcaption>
-                </figure>
-            </div>
-        </section>
+            <!-- Education Section -->
+            <section id="edu">
+                <h2>Education</h2>
+                <ul>
+                    <li>Bachelor's degree in Environmental Engineering from the State University of Pará</li>
+                    <li>Postgraduate degree in Statistics from the Federal University of Pará</li>
+                    <li>Currently pursuing a Ph.D. in Geography at Clark University</li>
+                </ul>
+            </section>
 
-        <section id="my-apps">
-            <h2>My Apps</h2>
-            <p>Explore my deforestation map comparison app.</p>
-            <button id="gee-app-button">View Deforestation Map Comparison</button>
-        
-            <!-- Add Open Pop-up Button -->
-            <button id="open-popup">Preview</button>
-        
-            <!-- Pop-up Window -->
-            <div id="popup-window">
-                <!-- "X" Button to Close the Pop-up -->
-                <span id="close-btn">&times;</span>
-        
-                <p>Overview of the GEE App:</p>
-                <img src="overview_app_gee.png" alt="GEE App Overview">
-            </div>
-        </section>
-        
+            <!-- Award Section -->
+            <section id="award">
+                <h2>Awards</h2>
+                <ul>
+                    <li>Emerging Leader by <a href="https://skoll.org/community/emerging-leaders-initiative/" target="_blank">Skoll Foundation</a></li>
+                </ul>
+            </section>
+
+            <!-- Projects Section -->
+            <section id="Pro">
+                <h2>Projects</h2>
+                <p>I have worked on several research projects focusing on Geographic Information Systems (GIS), Remote Sensing, and Land Use and Land Cover Mapping.</p>
+                
+                <!-- MapBiomas Logo with Link -->
+                <div class="project-logo">
+                    <figure>
+                        <a href="https://brasil.mapbiomas.org/en/" target="_blank" aria-label="MapBiomas Project">
+                            <img src="mapbiomas_logo.png" alt="MapBiomas Logo">
+                        </a>
+                        <figcaption>MapBiomas Project</figcaption>
+                    </figure>
+                </div>
+
+                <!-- RAISG Logo with Link -->
+                <div class="project-logo">
+                    <figure>
+                        <a href="https://www.raisg.org/en/" target="_blank" aria-label="RAISG Project">
+                            <img src="raisg_logo.png" alt="RAISG Logo">
+                        </a>
+                        <figcaption>RAISG Project</figcaption>
+                    </figure>
+                </div>
+
+                <!-- NASA LULC Logo with Link -->
+                <div class="project-logo">
+                    <figure style="margin-right: 20px;">
+                        <a href="https://lcluc.umd.edu/node/39545" target="_blank" aria-label="NASA LCLUC Project">
+                            <img src="nasa_lulc_logo.png" alt="NASA LULC Logo">
+                        </a>
+                        <figcaption>NASA LCLUC Project</figcaption>
+                    </figure>
+                </div>
+            </section>
+
+            <!-- Poster Section -->
+            <section id="poster">
+                <h2>Poster</h2>
+                <ul>
+                    <li>Patterns of Change in Irrigation and Land Cover in Western Bahia, Brazil <a href="https://aag.secure-platform.com/aag2024/gallery/rounds/74/details/50856" target="_blank">AAG2024</a></li>
+                </ul>
+            </section>
+
+            <!-- My Apps Section -->
+            <section id="my-apps">
+                <h2>My Apps</h2>
+                <p>Explore my deforestation map comparison app.</p>
+                <button id="gee-app-button" aria-label="View Deforestation Map Comparison">View Deforestation Map Comparison</button>
+                
+                <!-- Add Open Pop-up Button -->
+                <button id="open-popup" aria-label="Preview">Preview</button>
+                
+                <!-- Pop-up Window -->
+                <div id="popup-window">
+                    <!-- "X" Button to Close the Pop-up -->
+                    <span id="close-btn" aria-label="Close Preview">&times;</span>
+                    
+                    <p>Overview of the GEE App:</p>
+                    <img src="overview_app_gee.png" alt="GEE App Overview">
+                </div>
+            </section>
+        </main>
+
+        <!-- JavaScript for Buttons -->
         <script>
             // For GEE App Button
             const geeButton = document.getElementById('gee-app-button');
             geeButton.onclick = function() {
-                window.open('https://avfonseca.users.earthengine.app/view/agreement-prodes-mapbiomas-gfc', '_blank');
+                window.open('https://ee-avfonseca.projects.earthengine.app/view/deforestation-map-comparison', '_blank');
             };
-        
+
             // For Opening the Pop-up
             const open_button = document.getElementById('open-popup');
             const close_button = document.getElementById('close-btn');
             const popup = document.getElementById('popup-window');
-        
+
             open_button.onclick = function() {
                 popup.style.display = 'block';
             };
-        
+
             close_button.onclick = function() {
                 popup.style.display = 'none';
             };
+
+            // Close the pop-up when clicking outside of it
+            window.onclick = function(event) {
+                if (event.target === popup) {
+                    popup.style.display = 'none';
+                }
+            };
         </script>
-        
-        
-        
 
         <!-- Footer Section -->
         <footer>
@@ -132,61 +159,6 @@
             <p><small>&copy;Copyright &copy;
                 <script>document.write(new Date().getMonth() + 1 + '/' + new Date().getFullYear());</script>
                 Antonio Fonseca <br> All rights reserved</small></p>
-                <!-- br allows break in another line -->
-                <!-- <p><small>&copy;Copyright &copy;
-                    <script>document.write(new date().toLocaleString('eu-US', {month: 'short'}) + '/' + new Date().getFullYear());</script>
-                    Antonio Fonseca <br> All rights reserved</small></p> -->
-        
-                    <!-- <button onclick = "document.getElementById('lucky').textContent='You are the BEST One'";>Get your lucky words</button>
-
-                    <p id = "lucky"></p>
-
-                    <div>
-                        <button id ="backtoTop">Back To Top</button>
-                    </div>
-        <script>
-            const backButton = document.getElementById('backtoTop');
-            backButton.onclick = function(){
-                window.scrollTo({
-                    top: 0,
-                    behavior:'smooth'
-            })
-            };
-        </script>
-
-<button onclick= "this.textContent = Date()" style="height: 100px;font-size: large;">The current date and time</button>
-
-<button class='change_bk'>Click here to highlight my past experience</button>
-<div class="change_color">
-    <h1>
-        This is intro
-    </h1>
-    <p>
-        Hi, welcome to my <a href="">personal website</a>,
-        this is my <a href = "">projects web</a>
-    </p>
-</div>
-    <script>
-        const changebutton = document.querySelector(".change_bk");
-        const past_experience =  document.querySelectorAll(".change_color p a");
-
-        let back_g = true;
-
-        changebutton.onclick = function(){
-            past_experience.forEach(link => {
-                if (back_g){
-                    link.classList.add("highlight_e");
-                } else{
-                    link.classList.remove("highlight_e");
-                }
-            })
-            back_g = !back_g;
-            }
-    </script>
-        <p id="current-time"></p> -->
-
         </footer>
-
-        
     </body>
 </html>
